@@ -2,11 +2,15 @@ services:
   app:
     build:
       context: .
-      dockerfile: Dockerfile.prod
+      dockerfile: Dockerfile.dev
     ports:
-      - "8080:3000"
+      - "3000:3000"
     volumes:
       - .:/app # this is watching my code live and hot loading it
       - node_modules:/app/node_modules  # this is the code living on the container
+    environment:
+      - NODE_ENV=development
 volumes:
   node_modules:
+
+    
