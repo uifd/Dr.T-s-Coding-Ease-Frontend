@@ -2,64 +2,123 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div>
+            {/* Banner */}
+      <section id="banner">
+        <div className="inner">
+          <h2>Spectral</h2>
+          <p>
+            Another fine responsive
+            <br />
+            site template freebie
+            <br />
+            crafted by <a href="http://html5up.net">HTML5 UP</a>.
           </p>
+          <ul className="actions special">
+            <li>
+              <a href="#" className="button primary">
+                Activate
+              </a>
+            </li>
+          </ul>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        {/* This anchor is what RootClient’s scroll logic & CSS react to */}
+        <a href="#one" className="more">
+          Learn More
+        </a>
+      </section>
+
+      {/* One */}
+      <section id="one" className="wrapper style1 special">
+        <div className="inner">
+          <header className="major">
+            <h2>
+              Arcu aliquet vel lobortis ata nisl
+              <br />
+              eget augue amet aliquet nisl cep donec
+            </h2>
+            <p>
+              Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
+              eleifend
+              <br />
+              fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
+              ullamcorper.
+            </p>
+          </header>
+          <ul className="icons major">
+            <li>
+              <span className="icon fa-gem major style1">
+                <span className="label">Lorem</span>
+              </span>
+            </li>
+            <li>
+              <span className="icon fa-heart major style2">
+                <span className="label">Ipsum</span>
+              </span>
+            </li>
+            <li>
+              <span className="icon solid fa-code major style3">
+                <span className="label">Dolor</span>
+              </span>
+            </li>
+          </ul>
         </div>
-      </main>
+      </section>
+
+      {/* Two – spotlight sections */}
+      <section id="two" className="wrapper alt style2">
+        <section className="spotlight">
+          <div className="image">
+            <img src="/images/pic01.jpg" alt="" />
+          </div>
+          <div className="content">
+            <h2>
+              Magna primis lobortis
+              <br />
+              sed ullamcorper
+            </h2>
+            <p>
+              Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
+              imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            </p>
+          </div>
+        </section>
+        <section className="spotlight">
+          <div className="image">
+            <img src="/images/pic02.jpg" alt="" />
+          </div>
+          <div className="content">
+            <h2>
+              Tortor dolore feugiat
+              <br />
+              elementum magna
+            </h2>
+            <p>
+              Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
+              imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            </p>
+          </div>
+        </section>
+        <section className="spotlight">
+          <div className="image">
+            <img src="/images/pic03.jpg" alt="" />
+          </div>
+          <div className="content">
+            <h2>
+              Augue eleifend aliquet
+              <br />
+              sed condimentum
+            </h2>
+            <p>
+              Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
+              imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            </p>
+          </div>
+        </section>
+      </section>
+
+      {/* You can continue with #three and #cta sections from index.html
+          the same way – just copy the HTML structure and turn into JSX. */}
     </div>
   );
 }
