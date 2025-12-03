@@ -6,18 +6,23 @@ export default function Home() {
             {/* Banner */}
       <section id="banner">
         <div className="inner">
-          <h2>Spectral</h2>
+          <h2>Roboscribe</h2>
           <p>
-            Another fine responsive
+            Transcript coding made easy
             <br />
-            site template freebie
+            leveraging AI tools
             <br />
-            crafted by <a href="http://html5up.net">HTML5 UP</a>.
+            As envisioned by Tingyan Liu
           </p>
           <ul className="actions special">
             <li>
               <a href="#" className="button primary">
-                Activate
+                Sign Up
+              </a>
+            </li>
+            <li>
+              <a href="#" className="button primary">
+                Coding
               </a>
             </li>
           </ul>
@@ -33,31 +38,31 @@ export default function Home() {
         <div className="inner">
           <header className="major">
             <h2>
-              Arcu aliquet vel lobortis ata nisl
+              Roboscribe: Auto-Codified Transcripts
               <br />
-              eget augue amet aliquet nisl cep donec
+              with AI percision
             </h2>
             <p>
-              Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-              eleifend
+              Turn every raw transcript into clean, structured data — automatically. 
+              Roboscribe uses an AI-driven
               <br />
-              fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-              ullamcorper.
+              large lanuage model to codify messy 
+              responses into an attachment script assessment result in seconds.
             </p>
           </header>
           <ul className="icons major">
             <li>
-              <span className="icon fa-gem major style1">
+              <span className="icon solid fa-download major style1">
                 <span className="label">Lorem</span>
               </span>
             </li>
             <li>
-              <span className="icon fa-heart major style2">
+              <span className="icon solid fa-code major style2">
                 <span className="label">Ipsum</span>
               </span>
             </li>
             <li>
-              <span className="icon solid fa-code major style3">
+              <span className="icon fa-file-alt major style3">
                 <span className="label">Dolor</span>
               </span>
             </li>
@@ -73,9 +78,7 @@ export default function Home() {
           </div>
           <div className="content">
             <h2>
-              Magna primis lobortis
-              <br />
-              sed ullamcorper
+              Who are we?
             </h2>
             <p>
               Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
@@ -89,9 +92,9 @@ export default function Home() {
           </div>
           <div className="content">
             <h2>
-              Tortor dolore feugiat
+              How do we code
               <br />
-              elementum magna
+              Transcipts?
             </h2>
             <p>
               Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
@@ -105,9 +108,7 @@ export default function Home() {
           </div>
           <div className="content">
             <h2>
-              Augue eleifend aliquet
-              <br />
-              sed condimentum
+              How does this work?
             </h2>
             <p>
               Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
@@ -117,8 +118,6 @@ export default function Home() {
         </section>
       </section>
 
-      {/* You can continue with #three and #cta sections from index.html
-          the same way – just copy the HTML structure and turn into JSX. */}
     </div>
   );
 }

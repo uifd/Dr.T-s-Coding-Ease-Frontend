@@ -59,7 +59,7 @@ export default function RootClient({ children }: RootClientProps) {
       {/* Header */}
       <header id="header" className={headerAlt ? "alt" : ""}>
         <h1>
-          <Link href="/">Dr. T's</Link>
+          <Link href="/">Roboscribe</Link>
         </h1>
         <nav id="nav">
           <ul>
@@ -115,16 +115,6 @@ export default function RootClient({ children }: RootClientProps) {
           </ul>
         </nav>
       </header>
-
-      {/* Clickable overlay shown when menu is open (closes menu on click) */}
-      {menuOpen && (
-        <div
-          id="menu-overlay"
-          onClick={() => {
-            closeMenu();
-          }}
-        />
-      )}
 
       {/* Page content */}
       {children}

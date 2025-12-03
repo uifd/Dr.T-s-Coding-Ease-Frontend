@@ -4,7 +4,7 @@ import "./tailwind.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Dr. T's Coding Ease",
+  title: "Roboscribe",
   description: "Coding made easy with Dr. T",
 };
 
